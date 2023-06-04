@@ -1,0 +1,110 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-button:hover {
+    background-color: #222;
+}
+
+.toggle-button .icon {
+    margin-right: 5px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to bottom, #00bcd4, #0097a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading.light-mode {
+    background-image: none;
+    color: #333;
+}
+
+.heading.dark-mode {
+    background-image: linear-gradient(to bottom, #84ffff, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    color: #777;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.task-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.task-link {
+    color: #333;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFC107;
+}
+
+.task-link:hover {
+    background-color: #FFA000;
+    color: #fff;
+}
+
+.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.night-mode .card {
+    background-color: #444;
+    color: #fff;
+}
+
+.night-mode h2,
+.night-mode .task-link {
+    color: #fff;
+}

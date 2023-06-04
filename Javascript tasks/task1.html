@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <center>
+      <div
+        class="container"
+        style="margin: 200px; border: 4px solid black; padding: 100px"
+      >
+        <button style="width: 100px; height: 30px" onclick="showDate()">
+          show Date
+        </button>
+
+        <h3 id="TimeOutput"></h3>
+
+        <button style="width: 100px; height: 30px" onclick="showTime()">
+          show Time
+        </button>
+        <h3 id="dateOutput"></h3>
+      </div>
+    </center>
+
+    <script>
+      function showTime() {
+        document.getElementById("dateOutput").innerHTML = new Date();
+      }
+
+      function showDate() {
+        const date = new Date();
+        const d = date.getDate();
+        const m = date.toLocaleString("default", { month: "long" });
+        const yr = date.getFullYear();
+
+        document.getElementById("TimeOutput").innerHTML =
+          d + "/" + m + "/" + yr;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Kindly look at the console for output.
+    <script>
+      // concat method
+      const array1 = [10, 22, 30];
+      const array2 = [40, 50, 60];
+      const newArray = array1.concat(array2);
+      console.log(newArray); // Output: [10, 20, 30, 40, 50, 60]
+
+      var numbers = [10, 20, 30, 40, 50];
+      numbers.copyWithin(0, 3); // Copies values from index 3 to the beginning of the array
+      console.log(numbers); // Output: [40, 50, 30, 40, 50]
+
+      // map method
+      numbers = [1, 2, 3, 4, 5];
+      const multipliedNumbers = numbers.map((num) => num * 2);
+      console.log(multipliedNumbers); // Output: [2, 4, 6, 8, 10]
+
+      // every method
+      numbers = [1, 2, 3, 4, 5];
+      const allEven = numbers.every((num) => num % 2 === 0);
+      console.log(allEven); // Output: false
+
+      // some method
+      numbers = [1, 2, 3, 4, 5];
+      const hasEven = numbers.some((num) => num % 2 === 0);
+      console.log(hasEven); // Output: true
+
+      // filter method
+      numbers = [1, 2, 3, 4, 5];
+      const evenNumbers = numbers.filter((num) => num % 2 === 0);
+      console.log(evenNumbers); // Output: [2, 4]
+
+      numbers = [1, 2, 3, 4, 5];
+      const foundNumber = numbers.find((num) => num > 3);
+      console.log(foundNumber); // Output: 4
+    </script>
+  </body>
+</html>

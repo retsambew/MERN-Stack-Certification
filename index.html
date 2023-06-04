@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Naman Arora's Assignments</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      function toggleNightMode() {
+        var body = document.getElementsByTagName("body")[0];
+        var heading = document.getElementsByTagName("h1")[0];
+        var toggleButton = document.getElementsByClassName("toggle-button")[0];
+
+        body.classList.toggle("night-mode");
+        heading.classList.toggle("dark-mode");
+
+        if (body.classList.contains("night-mode")) {
+          toggleButton.innerHTML = '<span><i class="fas fa-sun"></i></span>'; // Moon icon
+        } else {
+          toggleButton.innerHTML = '<span><i class="fas fa-moon"></i></span>'; // Sun icon
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="navbar">
+      <button class="toggle-button" onclick="toggleNightMode()">
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </div>
+
+    <h1 class="light-mode">Naman Arora's Assignments</h1>
+
+    <div class="card">
+      <h2>HTML Task</h2>
+      <div class="task-row">
+        <a href="HTML tasks/task1.html" class="task-link">Task 1</a>
+        <a href="HTML tasks/task2.html" class="task-link">Task 2</a>
+        <a href="HTML tasks/task3.html" class="task-link">Task 3</a>
+        <a href="HTML tasks/task4.html" class="task-link">Task 4</a>
+        <a href="HTML tasks/task5.html" class="task-link">Task 5</a>
+        <a href="HTML tasks/task6.html" class="task-link">Task 6</a>
+        <a href="HTML tasks/task7.html" class="task-link">Task 7</a>
+        <a href="HTML tasks/task8.html" class="task-link">Task 8</a>
+        <a href="HTML tasks/task9.html" class="task-link">Task 9</a>
+        <a href="HTML tasks/task10.html" class="task-link">Task 10</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>CSS Task</h2>
+      <div class="task-row">
+        <a href="CSS tasks/task1.html" class="task-link">Task 1</a>
+        <a href="CSS tasks/task2.html" class="task-link">Task 2</a>
+        <a href="CSS tasks/task3.html" class="task-link">Task 3</a>
+        <a href="CSS tasks/task4.html" class="task-link">Task 4</a>
+        <a href="CSS tasks/task5.html" class="task-link">Task 5</a>
+        <a href="CSS tasks/task6.html" class="task-link">Task 6</a>
+        <a href="CSS tasks/task7.html" class="task-link">Task 7</a>
+        <a href="CSS tasks/task8.html" class="task-link">Task 8</a>
+        <a href="CSS tasks/task9.html" class="task-link">Task 9</a>
+        <a href="CSS tasks/task10.html" class="task-link">Task 10</a>
+        <a href="CSS tasks/task11.html" class="task-link">Task 11</a>
+        <a href="CSS tasks/task12.html" class="task-link">Task 12</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Bootstrap Task</h2>
+      <div class="task-row">
+        <a href="Bootstrap tasks/task1.html" class="task-link">Task 1</a>
+        <a href="Bootstrap tasks/task2.html" class="task-link">Task 2</a>
+        <a href="Bootstrap tasks/task3.html" class="task-link">Task 3</a>
+        <a href="Bootstrap tasks/task4.html" class="task-link">Task 4</a>
+        <a href="Bootstrap tasks/task5.html" class="task-link">Task 5</a>
+        <a href="Bootstrap tasks/task6.html" class="task-link">Task 6</a>
+        <a href="Bootstrap tasks/task7.html" class="task-link">Task 7</a>
+        <a href="Bootstrap tasks/task8.html" class="task-link">Task 8</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>JavaScript Task</h2>
+      <div class="task-row">
+        <a href="Javascript tasks/task1.html" class="task-link">Task 1</a>
+        <a href="Javascript tasks/task2.html" class="task-link">Task 2</a>
+        <a href="Javascript tasks/task3.html" class="task-link">Task 3</a>
+        <a href="Javascript tasks/task4.html" class="task-link">Task 4</a>
+        <a href="Javascript tasks/task5.html" class="task-link">Task 5</a>
+        <a href="Javascript tasks/task6.html" class="task-link">Task 6</a>
+        <a href="Javascript tasks/task7.html" class="task-link">Task 7</a>
+        <a href="Javascript tasks/task8.html" class="task-link">Task 8</a>
+        <a href="Javascript tasks/task9.html" class="task-link">Task 9</a>
+        <a href="Javascript tasks/task10.html" class="task-link">Task 10</a>
+        <a href="Javascript tasks/task11.html" class="task-link">Task 11</a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
+</html>

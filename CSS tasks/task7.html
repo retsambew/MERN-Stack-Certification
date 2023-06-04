@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidenav hover button</title>
+    <style>
+      .side-nav {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+
+      .link {
+        width: 100px;
+        height: 100px;
+        margin: 20px 0;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .link:hover {
+        transform: scale(1.2);
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+
+      .green {
+        background-color: green;
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: aqua;
+      }
+      .grey {
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="margin-left: 150px">Hoverable Sidenav Buttons</h2>
+    <p style="margin-left: 150px">
+      Hover on the buttons on the left side navigation to open them.
+    </p>
+    <div class="side-nav">
+      <div class="green link"></div>
+      <div class="red link"></div>
+      <div class="blue link"></div>
+      <div class="grey link"></div>
+    </div>
+  </body>
+</html>
